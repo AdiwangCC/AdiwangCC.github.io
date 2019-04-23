@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Adiwang">
 <meta property="og:description" content="查询数据11xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;2018-12-05&amp;apos;) and contains(CODE,&amp;apos;123456&amp;apos;)] 查询数据21doc(&amp;apos;xxx&amp;apos;) 查询collection1xd">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-22T01:26:46.587Z">
+<meta property="og:updated_time" content="2019-04-23T09:09:47.641Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Marklogic memo">
 <meta name="twitter:description" content="查询数据11xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;2018-12-05&amp;apos;) and contains(CODE,&amp;apos;123456&amp;apos;)] 查询数据21doc(&amp;apos;xxx&amp;apos;) 查询collection1xd">
@@ -303,6 +303,7 @@
 <h3 id="查询数据2"><a href="#查询数据2" class="headerlink" title="查询数据2"></a>查询数据2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc(&apos;xxx&apos;)</span><br></pre></td></tr></table></figure>
 <h3 id="查询collection"><a href="#查询collection" class="headerlink" title="查询collection"></a>查询collection</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-get-collections(&quot;/ccus/doc/ACCOUNTING/10378372836871.json&quot;)</span><br></pre></td></tr></table></figure>
 <h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-insert(&quot;/ccus/doc/M_USER_INFO/16016718303821.json&quot;,xdmp:unquote($json_UserInfo));</span><br><span class="line">for $uri in cts:uri-match(&quot;/ccus/doc/M_USER_INFO/16016718303821.json&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-add-collections($uri, &quot;M_USER_INFO&quot;);</span><br></pre></td></tr></table></figure>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-delete(&quot;/M_USER/4557795307.json&quot;)</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -448,7 +449,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数据1"><span class="nav-number">1.</span> <span class="nav-text">查询数据1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数据2"><span class="nav-number">2.</span> <span class="nav-text">查询数据2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询collection"><span class="nav-number">3.</span> <span class="nav-text">查询collection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入"><span class="nav-number">4.</span> <span class="nav-text">插入</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数据1"><span class="nav-number">1.</span> <span class="nav-text">查询数据1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数据2"><span class="nav-number">2.</span> <span class="nav-text">查询数据2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询collection"><span class="nav-number">3.</span> <span class="nav-text">查询collection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入"><span class="nav-number">4.</span> <span class="nav-text">插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除"><span class="nav-number">5.</span> <span class="nav-text">删除</span></a></li></ol></div>
             
 
           </div>
