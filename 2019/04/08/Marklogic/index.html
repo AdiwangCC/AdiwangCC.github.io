@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang>
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="查询数据11xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;2018-12-05&amp;apos;) and contains(CODE,&amp;apos;123456&amp;apos;)] 查询数据21doc(&amp;apos;xxx&amp;apos;) 查询collection1xd">
+<meta name="description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 1fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)  模糊检索 1xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;20">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Marklogic memo">
 <meta property="og:url" content="http://yoursite.com/2019/04/08/Marklogic/index.html">
 <meta property="og:site_name" content="Adiwang">
-<meta property="og:description" content="查询数据11xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;2018-12-05&amp;apos;) and contains(CODE,&amp;apos;123456&amp;apos;)] 查询数据21doc(&amp;apos;xxx&amp;apos;) 查询collection1xd">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-23T09:09:47.641Z">
+<meta property="og:description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 1fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)  模糊检索 1xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;20">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-24T08:16:10.010Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Marklogic memo">
-<meta name="twitter:description" content="查询数据11xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;2018-12-05&amp;apos;) and contains(CODE,&amp;apos;123456&amp;apos;)] 查询数据21doc(&amp;apos;xxx&amp;apos;) 查询collection1xd">
+<meta name="twitter:description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 1fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)  模糊检索 1xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;20">
 
 
 
@@ -105,7 +105,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -137,7 +137,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -185,7 +185,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            Home
+            首页
           </a>
         </li>
       
@@ -195,7 +195,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            Archives
+            归档
           </a>
         </li>
       
@@ -259,9 +259,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-08T19:42:27+09:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-08T19:42:27+09:00">
                 2019-04-08
               </time>
             
@@ -299,11 +299,50 @@
       
 
       
-        <h3 id="查询数据1"><a href="#查询数据1" class="headerlink" title="查询数据1"></a>查询数据1</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:directory(&quot;/xxx/MAILNOTICE/&quot;,&quot;infinity&quot;)/ROOT[contains(DATETIME,&apos;2018-12-05&apos;) and contains(CODE,&apos;123456&apos;)]</span><br></pre></td></tr></table></figure>
-<h3 id="查询数据2"><a href="#查询数据2" class="headerlink" title="查询数据2"></a>查询数据2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc(&apos;xxx&apos;)</span><br></pre></td></tr></table></figure>
-<h3 id="查询collection"><a href="#查询collection" class="headerlink" title="查询collection"></a>查询collection</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-get-collections(&quot;/ccus/doc/ACCOUNTING/10378372836871.json&quot;)</span><br></pre></td></tr></table></figure>
-<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-insert(&quot;/ccus/doc/M_USER_INFO/16016718303821.json&quot;,xdmp:unquote($json_UserInfo));</span><br><span class="line">for $uri in cts:uri-match(&quot;/ccus/doc/M_USER_INFO/16016718303821.json&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-add-collections($uri, &quot;M_USER_INFO&quot;);</span><br></pre></td></tr></table></figure>
-<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-delete(&quot;/M_USER/4557795307.json&quot;)</span><br></pre></td></tr></table></figure>
+        <h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><ol>
+<li><p>范围检索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cts:uri-match(&quot;*M_INFO*.json&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>特定检索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fn:doc(&quot;/mst/M_DEPART.json&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>模糊检索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:directory(&quot;/xxx/MAILNOTICE/&quot;,&quot;infinity&quot;)/ROOT[contains(DATETIME,&apos;2018-12-05&apos;) and contains(CODE,&apos;123456&apos;)]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>collection检索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-get-collections(&quot;/ccus/ACCOUNT/1037837.json&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><ol>
+<li><p>替换例一</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for $userInfo in doc(cts:uri-match(&quot;/doc/M_USER_INFO/*.json&quot;))</span><br><span class="line">return</span><br><span class="line">if($userInfo/ROOT/USER_TYPE = &quot;3&quot; or $userInfo/ROOT/USER_TYPE = &quot;4&quot;)then</span><br><span class="line">xdmp:node-replace($userInfo/ROOT/ID,text&#123;&quot;0001&quot;&#125;)</span><br><span class="line">else();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>替换例二</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">for $userInfo in doc(cts:uri-match(&quot;/doc/M_USER_INFO/*.json&quot;))</span><br><span class="line">let $replaceId := $userInfo/ROOT/LOGIN_ID/data()</span><br><span class="line">return</span><br><span class="line">if($userInfo/ROOT/USER_TYPE = &quot;3&quot;)then</span><br><span class="line">(</span><br><span class="line">xdmp:node-replace($userInfo/ROOT/ID,text&#123;$replaceId&#125;)</span><br><span class="line">)</span><br><span class="line">else();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>追加(insert-after)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for $userInfo in doc(cts:uri-match(&quot;/doc/M_USER_INFO/*.json&quot;))</span><br><span class="line">return</span><br><span class="line">if(not(exists($userInfo/ROOT/USER_ID)))then(xdmp:node-insert-after($userInfo/ROOT/DATETIME, object-node&#123;&quot;USER_ID&quot;:&quot;&quot;&#125;/USER_ID))</span><br><span class="line">else();</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><ol>
+<li><p>数据插入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">declare variable $json_UserInfo :=&apos;&apos;;</span><br><span class="line">xdmp:document-insert(&quot;/doc/M_USER_INFO/1601671.json&quot;,xdmp:unquote($json_UserInfo));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>collection设定</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $uri in cts:uri-match(&quot;/doc/M_USER_INFO/1601671.json&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-add-collections($uri, &quot;M_USER_INFO&quot;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>权限设定</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-set-permissions(cts:uri-match(&quot;/doc/M_USER_INFO/*.json&quot;), (xdmp:permission(&quot;rest-reader&quot;, &quot;read&quot;), xdmp:permission(&quot;rest-writer&quot;, &quot;update&quot;)));</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><ol>
+<li><p>特定删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-delete(&quot;/M_USER/4557795307.json&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>范围删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $uri in cts:uri-match(&quot;/doc/M_USER/*&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-delete($uri)</span><br></pre></td></tr></table></figure></li>
+</ol>
+
       
     </div>
     
@@ -336,6 +375,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/24/Postgres-memo/" rel="prev" title="Postgres memo">
+                Postgres memo <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -389,10 +432,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
+            站点概览
           </li>
         </ul>
       
@@ -402,7 +445,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Adiwang</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">在无限延伸的梦想后面 穿越冷酷无情的世界</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -412,8 +455,8 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -449,7 +492,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数据1"><span class="nav-number">1.</span> <span class="nav-text">查询数据1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数据2"><span class="nav-number">2.</span> <span class="nav-text">查询数据2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询collection"><span class="nav-number">3.</span> <span class="nav-text">查询collection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入"><span class="nav-number">4.</span> <span class="nav-text">插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除"><span class="nav-number">5.</span> <span class="nav-text">删除</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#查询"><span class="nav-number">1.</span> <span class="nav-text">查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改"><span class="nav-number">2.</span> <span class="nav-text">修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入"><span class="nav-number">3.</span> <span class="nav-text">插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除"><span class="nav-number">4.</span> <span class="nav-text">删除</span></a></li></ol></div>
             
 
           </div>
@@ -479,7 +522,7 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -487,7 +530,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
