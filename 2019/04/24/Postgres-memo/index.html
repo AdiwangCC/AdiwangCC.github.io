@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Adiwang">
 <meta property="og:description" content="数据库连接12psql -p 5433 mmdbpsql --host=col.azure.com -p 5432 -U uv2azure cii00 设定搜索路径123show search_path;set search_path = &amp;apos;scv2azure000&amp;apos;;set search_path to myschema,public; 查询表结构123456789\l">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-15T08:20:39.234Z">
+<meta property="og:updated_time" content="2019-05-30T02:27:21.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Postgres memo">
 <meta name="twitter:description" content="数据库连接12psql -p 5433 mmdbpsql --host=col.azure.com -p 5432 -U uv2azure cii00 设定搜索路径123show search_path;set search_path = &amp;apos;scv2azure000&amp;apos;;set search_path to myschema,public; 查询表结构123456789\l">
@@ -305,7 +305,8 @@
 <h3 id="查询表内容"><a href="#查询表内容" class="headerlink" title="查询表内容"></a>查询表内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">copy (select * from mmsc.sendresult where cause = &apos;SMPT&apos;) to &apos;/tmp/result20190422_1.txt&apos;;</span><br></pre></td></tr></table></figure>
 <p>like、not like在SQL中用于模糊查询，%表示任意个字符，_表示单个任意字符，如果需要在模糊查询中查询这两个通配符，需要用ESCAPE进行转义，如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from table where name like &apos;张/_小%&apos; escape &apos;/&apos;;</span><br></pre></td></tr></table></figure></p>
 <p>取一条数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from table limit 1;</span><br></pre></td></tr></table></figure></p>
-
+<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE public.user_model;</span><br></pre></td></tr></table></figure>
+<h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE public.DP_USER_MODEL(</span><br><span class="line">    UserModel_ID varchar(256) NOT NULL,</span><br><span class="line">    userID varchar(256) NOT NULL,</span><br><span class="line">    UserModelCreationDate date,</span><br><span class="line">    UserModelCreationTime time,</span><br><span class="line">    UserModelSort varchar(256),</span><br><span class="line">    UserModelAnimalSpecies varchar(256),</span><br><span class="line">    UserModelOrgans varchar(256),</span><br><span class="line">    UserModelTissues varchar(256),</span><br><span class="line">    UserModelAccuracy int,</span><br><span class="line">    PRIMARY KEY(UserModel_ID, userID) );</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -418,7 +419,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -455,7 +456,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库连接"><span class="nav-number">1.</span> <span class="nav-text">数据库连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设定搜索路径"><span class="nav-number">2.</span> <span class="nav-text">设定搜索路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询表结构"><span class="nav-number">3.</span> <span class="nav-text">查询表结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询表内容"><span class="nav-number">4.</span> <span class="nav-text">查询表内容</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库连接"><span class="nav-number">1.</span> <span class="nav-text">数据库连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设定搜索路径"><span class="nav-number">2.</span> <span class="nav-text">设定搜索路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询表结构"><span class="nav-number">3.</span> <span class="nav-text">查询表结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询表内容"><span class="nav-number">4.</span> <span class="nav-text">查询表内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除表"><span class="nav-number">5.</span> <span class="nav-text">删除表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建表"><span class="nav-number">6.</span> <span class="nav-text">创建表</span></a></li></ol></div>
             
 
           </div>
