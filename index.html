@@ -686,7 +686,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:directory(&quot;/xxx/MAILNOTICE/&quot;,&quot;infinity&quot;)/ROOT[contains(DATETIME,&apos;2018-12-05&apos;) and contains(CODE,&apos;123456&apos;)]</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>文件名检索</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $info in xdmp:directory(&quot;/ccus/cnt/GINOUSYA_INFO_APPLY/&quot;,&quot;infinity&quot;)/ROOT[DOCUMENT_UUID=&apos;/ccus/doc/GINOUSYA_INFO_APPLY/13032901339511561110.json&apos;]/..</span><br><span class="line">return</span><br><span class="line">xdmp:node-uri($info)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $info in xdmp:directory(&quot;/cnt/INFO_APPLY/&quot;,&quot;infinity&quot;)/ROOT[DOCUMENT_UUID=&apos;/doc/INFO_APPLY/130329.json&apos;]/..</span><br><span class="line">return</span><br><span class="line">xdmp:node-uri($info)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>collection检索</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-get-collections(&quot;/ccus/ACCOUNT/1037837.json&quot;)</span><br></pre></td></tr></table></figure>
