@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 1fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)  模糊检索 1xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;20">
+<meta name="description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 12345678fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)cts:search(fn:doc(),cts:and-query((                cts:collection-query(&amp;quot;JIGYOUSYA_INFO&amp;quot;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Marklogic memo">
 <meta property="og:url" content="http://yoursite.com/2018/04/08/Marklogic/index.html">
 <meta property="og:site_name" content="Adiwang">
-<meta property="og:description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 1fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)  模糊检索 1xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;20">
+<meta property="og:description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 12345678fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)cts:search(fn:doc(),cts:and-query((                cts:collection-query(&amp;quot;JIGYOUSYA_INFO&amp;quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-03T07:09:00.920Z">
+<meta property="og:updated_time" content="2019-11-21T03:22:47.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Marklogic memo">
-<meta name="twitter:description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 1fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)  模糊检索 1xdmp:directory(&amp;quot;/xxx/MAILNOTICE/&amp;quot;,&amp;quot;infinity&amp;quot;)/ROOT[contains(DATETIME,&amp;apos;20">
+<meta name="twitter:description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 12345678fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)cts:search(fn:doc(),cts:and-query((                cts:collection-query(&amp;quot;JIGYOUSYA_INFO&amp;quot;">
 
 
 
@@ -304,7 +304,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cts:uri-match(&quot;*M_INFO*.json&quot;)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>特定检索</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fn:doc(&quot;/mst/M_DEPART.json&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fn:doc(&quot;/mst/M_DEPART.json&quot;)</span><br><span class="line">cts:search(fn:doc(),cts:and-query((</span><br><span class="line">                cts:collection-query(&quot;JIGYOUSYA_INFO&quot;)</span><br><span class="line">            )))</span><br><span class="line"></span><br><span class="line">xdmp:estimate(cts:search(fn:doc(),cts:and-query((</span><br><span class="line">                cts:collection-query(&quot;JIGYOUSYA_INFO&quot;)</span><br><span class="line">            )))</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>模糊检索</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:directory(&quot;/xxx/MAILNOTICE/&quot;,&quot;infinity&quot;)/ROOT[contains(DATETIME,&apos;2018-12-05&apos;) and contains(CODE,&apos;123456&apos;)]</span><br></pre></td></tr></table></figure>
