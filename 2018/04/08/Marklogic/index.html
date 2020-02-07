@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Adiwang">
 <meta property="og:description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 12345678fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)cts:search(fn:doc(),cts:and-query((                cts:collection-query(&amp;quot;JIGYOUSYA_INFO&amp;quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-21T03:22:47.384Z">
+<meta property="og:updated_time" content="2020-02-07T06:51:42.956Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Marklogic memo">
 <meta name="twitter:description" content="查询 范围检索 1cts:uri-match(&amp;quot;*M_INFO*.json&amp;quot;)  特定检索 12345678fn:doc(&amp;quot;/mst/M_DEPART.json&amp;quot;)cts:search(fn:doc(),cts:and-query((                cts:collection-query(&amp;quot;JIGYOUSYA_INFO&amp;quot;">
@@ -337,6 +337,9 @@
 <li><p>权限设定</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-set-permissions(cts:uri-match(&quot;/doc/M_USER_INFO/*.json&quot;), (xdmp:permission(&quot;rest-reader&quot;, &quot;read&quot;), xdmp:permission(&quot;rest-writer&quot;, &quot;update&quot;)));</span><br></pre></td></tr></table></figure>
 </li>
+<li><p>范围插入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">for $i in 1 to 500</span><br><span class="line">let $json_ScreenInfo :=concat(&apos;</span><br><span class="line">&#123;</span><br><span class="line">&quot;ROOT&quot;: &#123;</span><br><span class="line">&quot;APPLY_DATE&quot;: &quot;2018-11-27&quot;, </span><br><span class="line">&quot;SITE_ID&quot;: &quot;0402020181204&apos;,fn:format-number($i, &quot;000&quot;),&apos;&quot;, </span><br><span class="line">&quot;SITE_NAME&quot;: &quot;現場テスト&apos;,fn:format-number($i, &quot;000&quot;),&apos;&quot;, </span><br><span class="line">&quot;DOCUMENT_UUID&quot;: &quot;/ccus/doc/SITE_INFO/BML0402020181204&apos;,fn:format-number($i, &quot;000&quot;),&apos;.json&quot;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&apos;)</span><br><span class="line">let  $updateFlg := xdmp:document-insert(concat(&quot;0402020181204&quot;,fn:format-number($i, &quot;000&quot;),&quot;.json&quot;),xdmp:unquote($json_ScreenInfo))</span><br><span class="line">return</span><br><span class="line">   concat(&quot;0402020181204&quot;,fn:format-number($i, &quot;000&quot;),&quot;.json&quot;)</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><ol>
 <li><p>特定删除</p>
@@ -515,7 +518,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
