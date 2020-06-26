@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    linux |  AdiwangCC
+    技术 |  AdiwangCC
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -37,205 +37,56 @@
       
     <main class="content on">
       <section class="outer">
-  <article
-  id="post-linux"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
+  <article class="articles">
     
-    <header class="article-header">
+    
+    <h1 class="page-type-title">技术</h1>
+    
+    
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2018" class="archive-year">2018</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2018/05/30/Docker-memo/" class="archive-article-date">
+  <time datetime="2018-05-30T02:29:25.000Z" itemprop="datePublished">05/30</time>
+</a>
        
-<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  linux
-</h1>
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2018/05/30/Docker-memo/"
+    >Docker memo</a> 
+</h2>
  
 
     </header>
-     
-    <div class="article-meta">
-      <a href="/2019/06/14/linux/" class="article-date">
-  <time datetime="2019-06-14T06:47:53.000Z" itemprop="datePublished">2019-06-14</time>
-</a>   
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">151</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
-        </span>
-    </span>
-</div>
- 
-    </div>
+    
       
-    <div class="tocbot"></div>
-
-
-
-
-  
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h3 id="log轮替"><a href="#log轮替" class="headerlink" title="log轮替"></a>log轮替</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ls -lh</span><br><span class="line">sudo su -</span><br><span class="line">cd /etc/logrotate.d</span><br><span class="line">vi tomcat</span><br><span class="line">/opt/apache-tomcat-8.5.20/logs/*.out &#123;</span><br><span class="line">    daily</span><br><span class="line">    rotate 7</span><br><span class="line">    copytruncate</span><br><span class="line">    missingok</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">logrotate /etc/logrotate.conf</span><br><span class="line">logrotate -v -f /etc/logrotate.d/tomcat</span><br></pre></td></tr></table></figure>
-<h3 id="文件检索"><a href="#文件检索" class="headerlink" title="文件检索"></a>文件检索</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">find . -type f |xargs grep -i &quot;APPLY_MEANS&quot;</span><br><span class="line">find . -name &quot;APP.txt&quot;</span><br><span class="line">ls -ltr</span><br><span class="line">df -ah</span><br><span class="line">du -ah</span><br><span class="line">sudo yum install nodejs</span><br><span class="line">ps -ef | grep tomcat</span><br></pre></td></tr></table></figure>
-<h3 id="压缩，解压"><a href="#压缩，解压" class="headerlink" title="压缩，解压"></a>压缩，解压</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tar -zvcf ccuslog.tar ./</span><br><span class="line">tar -zvxf ccuslog.tar</span><br><span class="line"></span><br><span class="line">zip -r ccuslog.zip boduo</span><br><span class="line">unzip ccuslog.zip</span><br><span class="line"></span><br><span class="line">scp -p 172.16.24.5:/tmp/vpattern/5unix.sh /tmp/tartest/</span><br></pre></td></tr></table></figure>
-<h3 id="jar引用检索"><a href="#jar引用检索" class="headerlink" title="jar引用检索"></a>jar引用检索</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ProtectionDomain pd = StringUtils.class.getProtectionDomain();</span><br><span class="line">CodeSource cs = pd.getCodeSource();</span><br><span class="line">System.out.println(cs.getLocation());</span><br></pre></td></tr></table></figure>
-<h3 id="jar构成"><a href="#jar构成" class="headerlink" title="jar构成"></a>jar构成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn dependency:tree</span><br></pre></td></tr></table></figure>
-<h3 id="MD5-Windows"><a href="#MD5-Windows" class="headerlink" title="MD5(Windows)"></a>MD5(Windows)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">copy /b  beila.MP4+nb123.txt beila123.MP4</span><br><span class="line">certutil -hashfile beila123.MP4 MD5</span><br></pre></td></tr></table></figure>
-<h3 id="解压单个日志文件"><a href="#解压单个日志文件" class="headerlink" title="解压单个日志文件"></a>解压单个日志文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvpf /log_archive/20191210.tar.gz 20191210/スマホWebAPサーバ#1/CCUSログ/operation.log-20191210</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <div class="declare">
-      <ul class="post-copyright">
-        <li>
-          <i class="ri-copyright-line"></i>
-          <strong>Copyright： </strong>
-          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-        </li>
-      </ul>
-    </div>
-    
-    <footer class="article-footer">
-       
-<div class="share-btn">
-      <span class="share-sns share-outer">
-        <i class="ri-share-forward-line"></i>
-        分享
-      </span>
-      <div class="share-wrap">
-        <i class="arrow"></i>
-        <div class="share-icons">
-          
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="ri-weibo-fill"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="ri-wechat-fill"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="ri-qq-fill"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="ri-douban-line"></i>
-          </a>
-          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a> -->
-          
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="ri-facebook-circle-fill"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="ri-twitter-fill"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="ri-google-fill"></i>
-          </a>
-        </div>
-      </div>
-</div>
-
-<div class="wx-share-modal">
-    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2019/06/14/linux/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div id="share-mask"></div>  
-    </footer>
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
   </div>
 
-   
-  <nav class="article-nav">
-    
-      <a href="/2019/09/19/k8s/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            k8s
-          
-        </div>
-      </a>
     
     
-      <a href="/2018/05/30/Docker-memo/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Docker memo</div>
-      </a>
-    
-  </nav>
-
-   
-<!-- valine评论 -->
-<div id="vcomments-box">
-  <div id="vcomments"></div>
-</div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
-<script>
-  new Valine({
-    el: "#vcomments",
-    app_id: "Oe3suexhWibYXBuSNc4IEwIV-gzGzoHsz",
-    app_key: "A0eSkhu9RCfwrsn4TfKShPT6",
-    path: window.location.pathname,
-    avatar: "monsterid",
-    placeholder: "给我的文章加点评论吧~",
-    recordIP: true,
-  });
-  const infoEle = document.querySelector("#vcomments .info");
-  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-    infoEle.childNodes.forEach(function (item) {
-      item.parentNode.removeChild(item);
-    });
-  }
-</script>
-<style>
-  #vcomments-box {
-    padding: 5px 30px;
-  }
-
-  @media screen and (max-width: 800px) {
-    #vcomments-box {
-      padding: 5px 0px;
-    }
-  }
-
-  #vcomments-box #vcomments {
-    background-color: #fff;
-  }
-
-  .v .vlist .vcard .vh {
-    padding-right: 20px;
-  }
-
-  .v .vlist .vcard {
-    padding-left: 10px;
-  }
-</style>
-
- 
-     
+  </div>
 </article>
+      
+      
+    </div>
+  </div>
+  
+  
 
+  
 </section>
       <footer class="footer">
   <div class="outer">
@@ -395,21 +246,6 @@
 </script>
 
 <!-- Tocbot -->
-
-<script src="/js/tocbot.min.js"></script>
-<script>
-  tocbot.init({
-    tocSelector: '.tocbot',
-    contentSelector: '.article-entry',
-    headingSelector: 'h1, h2, h3, h4, h5, h6',
-    hasInnerContainers: true,
-    scrollSmooth: true,
-    scrollContainer: 'main',
-    positionFixedSelector: '.tocbot',
-    positionFixedClass: 'is-position-fixed',
-    fixedSidebarOffset: 'auto'
-  });
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
