@@ -175,54 +175,6 @@
 
     
     <article
-  id="post-Docker-memo"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2018/05/30/Docker-memo/"
-    >Docker memo</a> 
-</h2>
- 
-
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2018/05/30/Docker-memo/" class="article-date">
-  <time datetime="2018-05-30T02:29:25.000Z" itemprop="datePublished">2018-05-30</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo docker build -t cna-gateway .</span><br><span class="line">sudo docker push cna-gateway</span><br><span class="line">sudo docker stop fj-cna-gateway</span><br><span class="line">sudo docker rm  fj-cna-gateway</span><br><span class="line">sudo docker run -itd --name fj-cna-gateway -v /home/noah/k8s/conf/lib:/appl/ii/iid501/lib -v /home/noah/k8s/conf/an1/iid501:/appl/ii/iid501/properties -v /home/noah/k8s/conf/an1/iid401:/appl/ii/iid401/properties  -v /home/noah/k8s/conf/an1/iid601:/appl/ii/iid601/properties --restart=always --net=dev_nw --ip=10.20.0.64 --link=fj-cna-postgres:db  -p 30090:8080 192.168.180.23:5000/cna-gateway</span><br><span class="line">sudo docker exec -it fj-cna-gateway /bin/bash</span><br><span class="line">sudo docker cp /tmp/webapi.war fj-cna-gateway:/usr/local/tomcat/webapps/webapi.war</span><br></pre></td></tr></table></figure>
-<p>如果是centos肯定有yum<br>如果是ubuntu那即是apt-get<br>如果是alpine那即是apk</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-    
- 
-   
-</article>
-
-    
-    <article
   id="post-Html"
   class="article article-type-post"
   itemscope
@@ -565,10 +517,6 @@
     
     <li class="nav-item">
       <a class="nav-item-link" href="/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags/旅行/">旅行</a>
     </li>
     
     <li class="nav-item">

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Docker memo</title>
-    <url>/2018/05/30/Docker-memo/</url>
-    <content><![CDATA[<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker build -t cna-gateway .</span><br><span class="line">sudo docker push cna-gateway</span><br><span class="line">sudo docker stop fj-cna-gateway</span><br><span class="line">sudo docker rm  fj-cna-gateway</span><br><span class="line">sudo docker run -itd --name fj-cna-gateway -v /home/noah/k8s/conf/lib:/appl/ii/iid501/lib -v /home/noah/k8s/conf/an1/iid501:/appl/ii/iid501/properties -v /home/noah/k8s/conf/an1/iid401:/appl/ii/iid401/properties  -v /home/noah/k8s/conf/an1/iid601:/appl/ii/iid601/properties --restart=always --net=dev_nw --ip=10.20.0.64 --link=fj-cna-postgres:db  -p 30090:8080 192.168.180.23:5000/cna-gateway</span><br><span class="line">sudo docker exec -it fj-cna-gateway /bin/bash</span><br><span class="line">sudo docker cp /tmp/webapi.war fj-cna-gateway:/usr/local/tomcat/webapps/webapi.war</span><br></pre></td></tr></table></figure>
-<p>如果是centos肯定有yum<br>如果是ubuntu那即是apt-get<br>如果是alpine那即是apk</p>
+    <title>Hexo Start</title>
+    <url>/2018/04/03/Hexo/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h3 id="追加"><a href="#追加" class="headerlink" title="追加"></a>追加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h3 id="config-yml-※Git指定"><a href="#config-yml-※Git指定" class="headerlink" title="_config.yml(※Git指定)"></a>_config.yml(※Git指定)</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:adiwangcc/adiwangcc.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h3 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C&quot;you_email&quot;</span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br><span class="line">cat /Users/xxx/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -62,14 +66,14 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Hexo Start</title>
-    <url>/2018/04/03/Hexo/</url>
-    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="追加"><a href="#追加" class="headerlink" title="追加"></a>追加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="config-yml-※Git指定"><a href="#config-yml-※Git指定" class="headerlink" title="_config.yml(※Git指定)"></a>_config.yml(※Git指定)</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:adiwangcc/adiwangcc.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<h3 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C&quot;you_email&quot;</span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br><span class="line">cat /Users/xxx/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+    <title>Html</title>
+    <url>/2018/05/20/Html/</url>
+    <content><![CDATA[<p>HTML原义字符    等价字符引用<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;	&amp;lt;</span><br><span class="line">&gt;	&amp;gt;</span><br><span class="line">&quot;	&amp;quot;</span><br><span class="line">&apos;	&amp;apos;</span><br><span class="line">&amp;	&amp;amp;</span><br><span class="line">空格	&amp;nbsp;</span><br><span class="line">换行	&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
+<p>HTML注释<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 我在注释内！ --&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS注释<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">/* 和 */</span><br></pre></td></tr></table></figure></p>
+<p>CSS ID选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#my-id</span><br><span class="line">选择 &lt;p id=&quot;my-id&quot;&gt; 或 &lt;a id=&quot;my-id&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS 属性选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.my-class</span><br><span class="line">选择 &lt;p class=&quot;my-class&quot;&gt; 和 &lt;a class=&quot;my-class&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>JavaScript调试<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alert(&apos;hello!&apos;);</span><br><span class="line">console.log(&apos;abc&apos;);</span><br><span class="line">let myVariable = document.querySelector(&apos;h1&apos;);</span><br></pre></td></tr></table></figure></p>
 ]]></content>
   </entry>
   <entry>
@@ -82,17 +86,6 @@
 <h3 id="jar构成"><a href="#jar构成" class="headerlink" title="jar构成"></a>jar构成</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mvn dependency:tree</span><br></pre></td></tr></table></figure>
 <h3 id="MD5-Windows"><a href="#MD5-Windows" class="headerlink" title="MD5(Windows)"></a>MD5(Windows)</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">copy /b  beila.MP4+nb123.txt beila123.MP4</span><br><span class="line">certutil -hashfile beila123.MP4 MD5</span><br></pre></td></tr></table></figure>
 <h3 id="解压单个日志文件"><a href="#解压单个日志文件" class="headerlink" title="解压单个日志文件"></a>解压单个日志文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tar xvpf /log_archive/20191210.tar.gz 20191210/スマホWebAPサーバ#1/CCUSログ/operation.log-20191210</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Html</title>
-    <url>/2018/05/20/Html/</url>
-    <content><![CDATA[<p>HTML原义字符    等价字符引用<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;	&amp;lt;</span><br><span class="line">&gt;	&amp;gt;</span><br><span class="line">&quot;	&amp;quot;</span><br><span class="line">&apos;	&amp;apos;</span><br><span class="line">&amp;	&amp;amp;</span><br><span class="line">空格	&amp;nbsp;</span><br><span class="line">换行	&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
-<p>HTML注释<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 我在注释内！ --&gt;</span><br></pre></td></tr></table></figure></p>
-<p>CSS注释<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">/* 和 */</span><br></pre></td></tr></table></figure></p>
-<p>CSS ID选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#my-id</span><br><span class="line">选择 &lt;p id=&quot;my-id&quot;&gt; 或 &lt;a id=&quot;my-id&quot;&gt;</span><br></pre></td></tr></table></figure></p>
-<p>CSS 属性选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.my-class</span><br><span class="line">选择 &lt;p class=&quot;my-class&quot;&gt; 和 &lt;a class=&quot;my-class&quot;&gt;</span><br></pre></td></tr></table></figure></p>
-<p>JavaScript调试<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alert(&apos;hello!&apos;);</span><br><span class="line">console.log(&apos;abc&apos;);</span><br><span class="line">let myVariable = document.querySelector(&apos;h1&apos;);</span><br></pre></td></tr></table></figure></p>
-]]></content>
   </entry>
   <entry>
     <title>Postgres memo</title>
