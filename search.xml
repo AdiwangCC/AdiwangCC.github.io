@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>About Me</title>
+    <url>/2017/About-Me/</url>
+    <content><![CDATA[<p>QQ：441741764</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo Start</title>
+    <url>/2018/Hexo/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h3 id="追加"><a href="#追加" class="headerlink" title="追加"></a>追加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h3 id="config-yml-※Git指定"><a href="#config-yml-※Git指定" class="headerlink" title="_config.yml(※Git指定)"></a>_config.yml(※Git指定)</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:adiwangcc&#x2F;adiwangcc.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h3 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C&quot;you_email&quot;</span><br><span class="line">ssh-add ~&#x2F;.ssh&#x2F;id_rsa</span><br><span class="line">cat &#x2F;Users&#x2F;xxx&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Html</title>
     <url>/2018/Html/</url>
     <content><![CDATA[<p>HTML原义字符    等价字符引用<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;	&lt;</span><br><span class="line">&gt;	&gt;</span><br><span class="line">&quot;	&quot;</span><br><span class="line">&#39;	&amp;apos;</span><br><span class="line">&amp;	&amp;</span><br><span class="line">空格	&amp;nbsp;</span><br><span class="line">换行	&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
@@ -18,47 +47,9 @@
       </tags>
   </entry>
   <entry>
-    <title>About Me</title>
-    <url>/2017/About-Me/</url>
-    <content><![CDATA[<p>QQ：441741764</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Postgres memo</title>
-    <url>/2018/Postgres-memo/</url>
-    <content><![CDATA[<h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">psql -p 5433 mmdb</span><br><span class="line">psql --host&#x3D;col.azure.com -p 5432 -U uv2azure cii00</span><br></pre></td></tr></table></figure>
-<h3 id="设定搜索路径"><a href="#设定搜索路径" class="headerlink" title="设定搜索路径"></a>设定搜索路径</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">show search_path;</span><br><span class="line">set search_path &#x3D; &#39;scv2azure000&#39;;</span><br><span class="line">set search_path to myschema,public;</span><br></pre></td></tr></table></figure>
-<h3 id="查询表结构"><a href="#查询表结构" class="headerlink" title="查询表结构"></a>查询表结构</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\l                         &#x2F;&#x2F; 显示所有数据库</span><br><span class="line">\dt                        &#x2F;&#x2F; 显示当前数据库中的所有表</span><br><span class="line">\d [table_name]            &#x2F;&#x2F; 显示当前数据库的指定表的表结构</span><br><span class="line">\c [database_name]         &#x2F;&#x2F; 切换到指定数据库,相当于use</span><br><span class="line">\c - [user_name]           &#x2F;&#x2F; 切换用户</span><br><span class="line">\du                        &#x2F;&#x2F; 显示所有用户</span><br><span class="line">\conninfo                  &#x2F;&#x2F; 显示当前数据库和连接信息</span><br><span class="line">\encoding [字元编码名称]    &#x2F;&#x2F; 显示或设定用户端字元编码</span><br><span class="line">\df                        &#x2F;&#x2F; 查看所有存储过程（函数）</span><br></pre></td></tr></table></figure>
-<h3 id="查询序列"><a href="#查询序列" class="headerlink" title="查询序列"></a>查询序列</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">select *  from pg_class where relkind&#x3D;&#39;S&#39;;</span><br><span class="line">select currval(&#39;log_info_id_seq&#39;);</span><br><span class="line">select nextval(&#39;log_info_id_seq&#39;);</span><br><span class="line">alter sequence id_seq restart with 3924;</span><br></pre></td></tr></table></figure>
-<h3 id="查询表内容"><a href="#查询表内容" class="headerlink" title="查询表内容"></a>查询表内容</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">copy (select * from mmsc.sendresult where cause &#x3D; &#39;SMPT&#39;) to &#39;&#x2F;tmp&#x2F;result20190422_1.txt&#39;;</span><br></pre></td></tr></table></figure>
-<p>like、not like在SQL中用于模糊查询，%表示任意个字符，_表示单个任意字符，如果需要在模糊查询中查询这两个通配符，需要用ESCAPE进行转义，如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">select * from table where name like &#39;张&#x2F;_小%&#39; escape &#39;&#x2F;&#39;;</span><br></pre></td></tr></table></figure><br>取一条数据<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">select * from table limit 1;</span><br></pre></td></tr></table></figure></p>
-<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DROP TABLE public.user_model;</span><br></pre></td></tr></table></figure>
-<h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CREATE TABLE public.DP_USER_MODEL(</span><br><span class="line">    UserModel_ID varchar(256) NOT NULL,</span><br><span class="line">    userID varchar(256) NOT NULL,</span><br><span class="line">    UserModelCreationDate date,</span><br><span class="line">    UserModelCreationTime time,</span><br><span class="line">    UserModelSort varchar(256),</span><br><span class="line">    UserModelAnimalSpecies varchar(256),</span><br><span class="line">    UserModelOrgans varchar(256),</span><br><span class="line">    UserModelTissues varchar(256),</span><br><span class="line">    UserModelAccuracy int,</span><br><span class="line">    PRIMARY KEY(UserModel_ID, userID) );</span><br></pre></td></tr></table></figure>
-<h3 id="COPY"><a href="#COPY" class="headerlink" title="COPY"></a>COPY</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pg_dump database名 &gt; backup_file名</span><br><span class="line">psql database名 &lt; backup_file名</span><br><span class="line"></span><br><span class="line">COPY log_info TO   &#39;&#x2F;tmp&#x2F;log_info.csv&#39; WITH CSV DELIMITER &#39;,&#39;;</span><br><span class="line">COPY log_info FROM &#39;&#x2F;tmp&#x2F;log_info.csv&#39; WITH CSV DELIMITER &#39;,&#39;;</span><br></pre></td></tr></table></figure>
-<h3 id="服务启停"><a href="#服务启停" class="headerlink" title="服务启停"></a>服务启停</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl status postgresql.service</span><br><span class="line">systemctl stop postgresql.service</span><br><span class="line">systemctl start postgresql.service</span><br><span class="line"></span><br><span class="line">initdb -D &#x2F;pgdb&#x2F;cs1mlg10_db --xlogdir&#x3D;&#x2F;transaction&#x2F;cs1mlg10_db --lc-collate&#x3D;&quot;C&quot; --lc-ctype&#x3D;&quot;C&quot; --encoding&#x3D;UTF8</span><br><span class="line">pg_ctl reload -D &#x2F;pgdb&#x2F;cs1mlg10_db</span><br><span class="line">pg_ctl restart -D &#x2F;pgdb&#x2F;cs1mlg10_db</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo Start</title>
-    <url>/2018/Hexo/</url>
-    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="追加"><a href="#追加" class="headerlink" title="追加"></a>追加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="config-yml-※Git指定"><a href="#config-yml-※Git指定" class="headerlink" title="_config.yml(※Git指定)"></a>_config.yml(※Git指定)</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:adiwangcc&#x2F;adiwangcc.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<h3 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C&quot;you_email&quot;</span><br><span class="line">ssh-add ~&#x2F;.ssh&#x2F;id_rsa</span><br><span class="line">cat &#x2F;Users&#x2F;xxx&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+    <title>K8s</title>
+    <url>/2019/k8s/</url>
+    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567&#x2F;colmina&#x2F;images&#x2F;coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb &#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f &#x2F;app&#x2F;deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f &#x2F;appl&#x2F;deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -112,9 +103,18 @@
       </tags>
   </entry>
   <entry>
-    <title>K8s</title>
-    <url>/2019/k8s/</url>
-    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567&#x2F;colmina&#x2F;images&#x2F;coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb &#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f &#x2F;app&#x2F;deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f &#x2F;appl&#x2F;deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>
+    <title>Postgres memo</title>
+    <url>/2018/Postgres-memo/</url>
+    <content><![CDATA[<h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">psql -p 5433 mmdb</span><br><span class="line">psql --host&#x3D;col.azure.com -p 5432 -U uv2azure cii00</span><br></pre></td></tr></table></figure>
+<h3 id="设定搜索路径"><a href="#设定搜索路径" class="headerlink" title="设定搜索路径"></a>设定搜索路径</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">show search_path;</span><br><span class="line">set search_path &#x3D; &#39;scv2azure000&#39;;</span><br><span class="line">set search_path to myschema,public;</span><br></pre></td></tr></table></figure>
+<h3 id="查询表结构"><a href="#查询表结构" class="headerlink" title="查询表结构"></a>查询表结构</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\l                         &#x2F;&#x2F; 显示所有数据库</span><br><span class="line">\dt                        &#x2F;&#x2F; 显示当前数据库中的所有表</span><br><span class="line">\d [table_name]            &#x2F;&#x2F; 显示当前数据库的指定表的表结构</span><br><span class="line">\c [database_name]         &#x2F;&#x2F; 切换到指定数据库,相当于use</span><br><span class="line">\c - [user_name]           &#x2F;&#x2F; 切换用户</span><br><span class="line">\du                        &#x2F;&#x2F; 显示所有用户</span><br><span class="line">\conninfo                  &#x2F;&#x2F; 显示当前数据库和连接信息</span><br><span class="line">\encoding [字元编码名称]    &#x2F;&#x2F; 显示或设定用户端字元编码</span><br><span class="line">\df                        &#x2F;&#x2F; 查看所有存储过程（函数）</span><br></pre></td></tr></table></figure>
+<h3 id="查询序列"><a href="#查询序列" class="headerlink" title="查询序列"></a>查询序列</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">select *  from pg_class where relkind&#x3D;&#39;S&#39;;</span><br><span class="line">select currval(&#39;log_info_id_seq&#39;);</span><br><span class="line">select nextval(&#39;log_info_id_seq&#39;);</span><br><span class="line">alter sequence id_seq restart with 3924;</span><br></pre></td></tr></table></figure>
+<h3 id="查询表内容"><a href="#查询表内容" class="headerlink" title="查询表内容"></a>查询表内容</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">copy (select * from mmsc.sendresult where cause &#x3D; &#39;SMPT&#39;) to &#39;&#x2F;tmp&#x2F;result20190422_1.txt&#39;;</span><br></pre></td></tr></table></figure>
+<p>like、not like在SQL中用于模糊查询，%表示任意个字符，_表示单个任意字符，如果需要在模糊查询中查询这两个通配符，需要用ESCAPE进行转义，如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">select * from table where name like &#39;张&#x2F;_小%&#39; escape &#39;&#x2F;&#39;;</span><br></pre></td></tr></table></figure><br>取一条数据<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">select * from table limit 1;</span><br></pre></td></tr></table></figure></p>
+<h3 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DROP TABLE public.user_model;</span><br></pre></td></tr></table></figure>
+<h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CREATE TABLE public.DP_USER_MODEL(</span><br><span class="line">    UserModel_ID varchar(256) NOT NULL,</span><br><span class="line">    userID varchar(256) NOT NULL,</span><br><span class="line">    UserModelCreationDate date,</span><br><span class="line">    UserModelCreationTime time,</span><br><span class="line">    UserModelSort varchar(256),</span><br><span class="line">    UserModelAnimalSpecies varchar(256),</span><br><span class="line">    UserModelOrgans varchar(256),</span><br><span class="line">    UserModelTissues varchar(256),</span><br><span class="line">    UserModelAccuracy int,</span><br><span class="line">    PRIMARY KEY(UserModel_ID, userID) );</span><br></pre></td></tr></table></figure>
+<h3 id="COPY"><a href="#COPY" class="headerlink" title="COPY"></a>COPY</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pg_dump database名 &gt; backup_file名</span><br><span class="line">psql database名 &lt; backup_file名</span><br><span class="line"></span><br><span class="line">COPY log_info TO   &#39;&#x2F;tmp&#x2F;log_info.csv&#39; WITH CSV DELIMITER &#39;,&#39;;</span><br><span class="line">COPY log_info FROM &#39;&#x2F;tmp&#x2F;log_info.csv&#39; WITH CSV DELIMITER &#39;,&#39;;</span><br></pre></td></tr></table></figure>
+<h3 id="服务启停"><a href="#服务启停" class="headerlink" title="服务启停"></a>服务启停</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl status postgresql.service</span><br><span class="line">systemctl stop postgresql.service</span><br><span class="line">systemctl start postgresql.service</span><br><span class="line"></span><br><span class="line">initdb -D &#x2F;pgdb&#x2F;cs1mlg10_db --xlogdir&#x3D;&#x2F;transaction&#x2F;cs1mlg10_db --lc-collate&#x3D;&quot;C&quot; --lc-ctype&#x3D;&quot;C&quot; --encoding&#x3D;UTF8</span><br><span class="line">pg_ctl reload -D &#x2F;pgdb&#x2F;cs1mlg10_db</span><br><span class="line">pg_ctl restart -D &#x2F;pgdb&#x2F;cs1mlg10_db</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
