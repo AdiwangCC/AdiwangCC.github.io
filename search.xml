@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>About Me</title>
-    <url>/2017/About-Me/</url>
-    <content><![CDATA[<p>QQ：441741764</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Docker memo</title>
     <url>/2018/Docker-memo/</url>
     <content><![CDATA[<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker build -t cna-gateway .</span><br><span class="line">sudo docker push cna-gateway</span><br><span class="line">sudo docker stop fj-cna-gateway</span><br><span class="line">sudo docker rm  fj-cna-gateway</span><br><span class="line">sudo docker run -itd --name fj-cna-gateway -v /home/noah/k8s/conf/lib:/appl/ii/iid501/lib -v /home/noah/k8s/conf/an1/iid501:/appl/ii/iid501/properties -v /home/noah/k8s/conf/an1/iid401:/appl/ii/iid401/properties  -v /home/noah/k8s/conf/an1/iid601:/appl/ii/iid601/properties --restart=always --net=dev_nw --ip=10.20.0.64 --link=fj-cna-postgres:db  -p 30090:8080 192.168.180.23:5000/cna-gateway</span><br><span class="line">sudo docker exec -it fj-cna-gateway /bin/bash</span><br><span class="line">sudo docker cp /tmp/webapi.war fj-cna-gateway:/usr/local/tomcat/webapps/webapi.war</span><br></pre></td></tr></table></figure>
@@ -40,6 +28,18 @@
       </categories>
       <tags>
         <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>About Me</title>
+    <url>/2017/About-Me/</url>
+    <content><![CDATA[<p>QQ：441741764</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -104,6 +104,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Html</title>
+    <url>/2018/Html/</url>
+    <content><![CDATA[<p>HTML原义字符    等价字符引用<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;	&amp;lt;</span><br><span class="line">&gt;	&amp;gt;</span><br><span class="line">&quot;	&amp;quot;</span><br><span class="line">&apos;	&amp;apos;</span><br><span class="line">&amp;	&amp;amp;</span><br><span class="line">空格	&amp;nbsp;</span><br><span class="line">换行	&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
+<p>HTML注释<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 我在注释内！ --&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS注释<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">/* 和 */</span><br></pre></td></tr></table></figure></p>
+<p>CSS ID选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#my-id</span><br><span class="line">选择 &lt;p id=&quot;my-id&quot;&gt; 或 &lt;a id=&quot;my-id&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>CSS 属性选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.my-class</span><br><span class="line">选择 &lt;p class=&quot;my-class&quot;&gt; 和 &lt;a class=&quot;my-class&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>JavaScript调试<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alert(&apos;hello!&apos;);</span><br><span class="line">console.log(&apos;abc&apos;);</span><br><span class="line">let myVariable = document.querySelector(&apos;h1&apos;);</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Postgres memo</title>
     <url>/2018/Postgres-memo/</url>
     <content><![CDATA[<h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">psql -p 5433 mmdb</span><br><span class="line">psql --host=col.azure.com -p 5432 -U uv2azure cii00</span><br></pre></td></tr></table></figure>
@@ -117,23 +134,6 @@
 <h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CREATE TABLE public.DP_USER_MODEL(</span><br><span class="line">    UserModel_ID varchar(256) NOT NULL,</span><br><span class="line">    userID varchar(256) NOT NULL,</span><br><span class="line">    UserModelCreationDate date,</span><br><span class="line">    UserModelCreationTime time,</span><br><span class="line">    UserModelSort varchar(256),</span><br><span class="line">    UserModelAnimalSpecies varchar(256),</span><br><span class="line">    UserModelOrgans varchar(256),</span><br><span class="line">    UserModelTissues varchar(256),</span><br><span class="line">    UserModelAccuracy int,</span><br><span class="line">    PRIMARY KEY(UserModel_ID, userID) );</span><br></pre></td></tr></table></figure>
 <h3 id="COPY"><a href="#COPY" class="headerlink" title="COPY"></a>COPY</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pg_dump database名 &gt; backup_file名</span><br><span class="line">psql database名 &lt; backup_file名</span><br><span class="line"></span><br><span class="line">COPY log_info TO   &apos;/tmp/log_info.csv&apos; WITH CSV DELIMITER &apos;,&apos;;</span><br><span class="line">COPY log_info FROM &apos;/tmp/log_info.csv&apos; WITH CSV DELIMITER &apos;,&apos;;</span><br></pre></td></tr></table></figure>
 <h3 id="服务启停"><a href="#服务启停" class="headerlink" title="服务启停"></a>服务启停</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl status postgresql.service</span><br><span class="line">systemctl stop postgresql.service</span><br><span class="line">systemctl start postgresql.service</span><br><span class="line"></span><br><span class="line">initdb -D /pgdb/cs1mlg10_db --xlogdir=/transaction/cs1mlg10_db --lc-collate=&quot;C&quot; --lc-ctype=&quot;C&quot; --encoding=UTF8</span><br><span class="line">pg_ctl reload -D /pgdb/cs1mlg10_db</span><br><span class="line">pg_ctl restart -D /pgdb/cs1mlg10_db</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Html</title>
-    <url>/2018/Html/</url>
-    <content><![CDATA[<p>HTML原义字符    等价字符引用<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;	&amp;lt;</span><br><span class="line">&gt;	&amp;gt;</span><br><span class="line">&quot;	&amp;quot;</span><br><span class="line">&apos;	&amp;apos;</span><br><span class="line">&amp;	&amp;amp;</span><br><span class="line">空格	&amp;nbsp;</span><br><span class="line">换行	&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
-<p>HTML注释<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!-- 我在注释内！ --&gt;</span><br></pre></td></tr></table></figure></p>
-<p>CSS注释<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">/* 和 */</span><br></pre></td></tr></table></figure></p>
-<p>CSS ID选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#my-id</span><br><span class="line">选择 &lt;p id=&quot;my-id&quot;&gt; 或 &lt;a id=&quot;my-id&quot;&gt;</span><br></pre></td></tr></table></figure></p>
-<p>CSS 属性选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.my-class</span><br><span class="line">选择 &lt;p class=&quot;my-class&quot;&gt; 和 &lt;a class=&quot;my-class&quot;&gt;</span><br></pre></td></tr></table></figure></p>
-<p>JavaScript调试<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alert(&apos;hello!&apos;);</span><br><span class="line">console.log(&apos;abc&apos;);</span><br><span class="line">let myVariable = document.querySelector(&apos;h1&apos;);</span><br></pre></td></tr></table></figure></p>
 ]]></content>
       <categories>
         <category>技术</category>
