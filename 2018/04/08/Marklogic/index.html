@@ -58,7 +58,11 @@
     <div class="article-meta">
       <a href="/2018/04/08/Marklogic/" class="article-date">
   <time datetime="2018-04-08T10:42:27.000Z" itemprop="datePublished">2018-04-08</time>
-</a>   
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -135,7 +139,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-delete(&quot;/M_USER/4557795307.json&quot;)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>范围删除</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $uri in cts:uri-match(&quot;/doc/M_USER/*&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-delete($uri)</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $uri in cts:uri-match(&quot;/doc/M_USER/*&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-delete($uri)</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
  
       <!-- reward -->
@@ -204,6 +209,8 @@
 </div>
 
 <div id="share-mask"></div>  
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+
     </footer>
   </div>
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-20T00:52:12.000Z</updated>
+  <updated>2020-06-26T06:23:17.937Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/09/19/k8s/"/>
     <id>http://yoursite.com/2019/09/19/k8s/</id>
     <published>2019-09-19T08:34:07.000Z</published>
-    <updated>2019-09-20T00:52:12.000Z</updated>
+    <updated>2020-06-26T06:23:17.937Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,10 @@
     </summary>
     
     
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -44,7 +48,7 @@
     <link href="http://yoursite.com/2019/06/14/linux/"/>
     <id>http://yoursite.com/2019/06/14/linux/</id>
     <published>2019-06-14T06:47:53.000Z</published>
-    <updated>2019-12-19T02:35:47.000Z</updated>
+    <updated>2020-06-26T06:23:23.604Z</updated>
     
     <summary type="html">
     
@@ -59,6 +63,10 @@
     </summary>
     
     
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -94,7 +102,7 @@
     <link href="http://yoursite.com/2018/05/20/Html/"/>
     <id>http://yoursite.com/2018/05/20/Html/</id>
     <published>2018-05-20T06:33:53.000Z</published>
-    <updated>2019-09-03T07:08:52.000Z</updated>
+    <updated>2020-06-26T06:23:11.215Z</updated>
     
     <summary type="html">
     
@@ -109,6 +117,10 @@
     </summary>
     
     
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -117,7 +129,7 @@
     <link href="http://yoursite.com/2018/04/24/Postgres-memo/"/>
     <id>http://yoursite.com/2018/04/24/Postgres-memo/</id>
     <published>2018-04-24T01:31:46.000Z</published>
-    <updated>2019-10-16T08:11:47.000Z</updated>
+    <updated>2020-06-26T06:23:35.557Z</updated>
     
     <summary type="html">
     
@@ -132,6 +144,10 @@
     </summary>
     
     
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -140,7 +156,7 @@
     <link href="http://yoursite.com/2018/04/08/Marklogic/"/>
     <id>http://yoursite.com/2018/04/08/Marklogic/</id>
     <published>2018-04-08T10:42:27.000Z</published>
-    <updated>2020-02-07T06:51:42.000Z</updated>
+    <updated>2020-06-26T06:23:29.630Z</updated>
     
     <summary type="html">
     
@@ -157,6 +173,10 @@
     </summary>
     
     
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -165,7 +185,7 @@
     <link href="http://yoursite.com/2018/04/03/Hexo/"/>
     <id>http://yoursite.com/2018/04/03/Hexo/</id>
     <published>2018-04-03T10:42:27.000Z</published>
-    <updated>2020-06-25T07:08:35.118Z</updated>
+    <updated>2020-06-26T06:22:56.005Z</updated>
     
     <summary type="html">
     
@@ -180,6 +200,10 @@
     </summary>
     
     
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   

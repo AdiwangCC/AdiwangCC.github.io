@@ -98,12 +98,17 @@
     <div class="article-meta">
       <a href="/2019/09/19/k8s/" class="article-date">
   <time datetime="2019-09-19T08:34:07.000Z" itemprop="datePublished">2019-09-19</time>
-</a>    
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+   
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567/colmina/images/coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb /bin/bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f /app/deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f /appl/deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure> 
+  <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567/colmina/images/coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb /bin/bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f /app/deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f /appl/deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>
+ 
       <!-- reward -->
       
     </div>
@@ -113,6 +118,8 @@
     
     <footer class="article-footer">
        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+
     </footer>
   </div>
 
@@ -144,7 +151,11 @@
     <div class="article-meta">
       <a href="/2019/06/14/linux/" class="article-date">
   <time datetime="2019-06-14T06:47:53.000Z" itemprop="datePublished">2019-06-14</time>
-</a>    
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+   
     </div>
       
     <div class="article-entry" itemprop="articleBody">
@@ -155,7 +166,8 @@
 <h3 id="jar引用检索"><a href="#jar引用检索" class="headerlink" title="jar引用检索"></a>jar引用检索</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ProtectionDomain pd = StringUtils.class.getProtectionDomain();</span><br><span class="line">CodeSource cs = pd.getCodeSource();</span><br><span class="line">System.out.println(cs.getLocation());</span><br></pre></td></tr></table></figure>
 <h3 id="jar构成"><a href="#jar构成" class="headerlink" title="jar构成"></a>jar构成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn dependency:tree</span><br></pre></td></tr></table></figure>
 <h3 id="MD5-Windows"><a href="#MD5-Windows" class="headerlink" title="MD5(Windows)"></a>MD5(Windows)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">copy /b  beila.MP4+nb123.txt beila123.MP4</span><br><span class="line">certutil -hashfile beila123.MP4 MD5</span><br></pre></td></tr></table></figure>
-<h3 id="解压单个日志文件"><a href="#解压单个日志文件" class="headerlink" title="解压单个日志文件"></a>解压单个日志文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvpf /log_archive/20191210.tar.gz 20191210/スマホWebAPサーバ#1/CCUSログ/operation.log-20191210</span><br></pre></td></tr></table></figure> 
+<h3 id="解压单个日志文件"><a href="#解压单个日志文件" class="headerlink" title="解压单个日志文件"></a>解压单个日志文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvpf /log_archive/20191210.tar.gz 20191210/スマホWebAPサーバ#1/CCUSログ/operation.log-20191210</span><br></pre></td></tr></table></figure>
+ 
       <!-- reward -->
       
     </div>
@@ -165,6 +177,8 @@
     
     <footer class="article-footer">
        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+
     </footer>
   </div>
 
@@ -250,7 +264,11 @@
     <div class="article-meta">
       <a href="/2018/05/20/Html/" class="article-date">
   <time datetime="2018-05-20T06:33:53.000Z" itemprop="datePublished">2018-05-20</time>
-</a>    
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+   
     </div>
       
     <div class="article-entry" itemprop="articleBody">
@@ -271,6 +289,8 @@
     
     <footer class="article-footer">
        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+
     </footer>
   </div>
 
@@ -302,7 +322,11 @@
     <div class="article-meta">
       <a href="/2018/04/24/Postgres-memo/" class="article-date">
   <time datetime="2018-04-24T01:31:46.000Z" itemprop="datePublished">2018-04-24</time>
-</a>    
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+   
     </div>
       
     <div class="article-entry" itemprop="articleBody">
@@ -328,6 +352,8 @@
     
     <footer class="article-footer">
        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+
     </footer>
   </div>
 
@@ -359,7 +385,11 @@
     <div class="article-meta">
       <a href="/2018/04/08/Marklogic/" class="article-date">
   <time datetime="2018-04-08T10:42:27.000Z" itemprop="datePublished">2018-04-08</time>
-</a>    
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+   
     </div>
       
     <div class="article-entry" itemprop="articleBody">
@@ -411,7 +441,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-delete(&quot;/M_USER/4557795307.json&quot;)</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>范围删除</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $uri in cts:uri-match(&quot;/doc/M_USER/*&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-delete($uri)</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $uri in cts:uri-match(&quot;/doc/M_USER/*&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-delete($uri)</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
  
       <!-- reward -->
@@ -423,6 +454,8 @@
     
     <footer class="article-footer">
        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+
     </footer>
   </div>
 
@@ -454,7 +487,11 @@
     <div class="article-meta">
       <a href="/2018/04/03/Hexo/" class="article-date">
   <time datetime="2018-04-03T10:42:27.000Z" itemprop="datePublished">2018-04-03</time>
-</a>    
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+   
     </div>
       
     <div class="article-entry" itemprop="articleBody">
@@ -475,6 +512,8 @@
     
     <footer class="article-footer">
        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+
     </footer>
   </div>
 
