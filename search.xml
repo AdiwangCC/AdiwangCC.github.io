@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>About Me</title>
-    <url>/2017/12/02/About-Me/</url>
-    <content><![CDATA[<p>QQ：441741764</p>
+    <title>Docker memo</title>
+    <url>/2018/05/30/Docker-memo/</url>
+    <content><![CDATA[<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker build -t cna-gateway .</span><br><span class="line">sudo docker push cna-gateway</span><br><span class="line">sudo docker stop fj-cna-gateway</span><br><span class="line">sudo docker rm  fj-cna-gateway</span><br><span class="line">sudo docker run -itd --name fj-cna-gateway -v /home/noah/k8s/conf/lib:/appl/ii/iid501/lib -v /home/noah/k8s/conf/an1/iid501:/appl/ii/iid501/properties -v /home/noah/k8s/conf/an1/iid401:/appl/ii/iid401/properties  -v /home/noah/k8s/conf/an1/iid601:/appl/ii/iid601/properties --restart=always --net=dev_nw --ip=10.20.0.64 --link=fj-cna-postgres:db  -p 30090:8080 192.168.180.23:5000/cna-gateway</span><br><span class="line">sudo docker exec -it fj-cna-gateway /bin/bash</span><br><span class="line">sudo docker cp /tmp/webapi.war fj-cna-gateway:/usr/local/tomcat/webapps/webapi.war</span><br></pre></td></tr></table></figure>
+<p>如果是centos肯定有yum<br>如果是ubuntu那即是apt-get<br>如果是alpine那即是apk</p>
 ]]></content>
       <categories>
-        <category>随笔</category>
+        <category>技术</category>
       </categories>
       <tags>
-        <tag>随笔</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -30,10 +31,21 @@
       </tags>
   </entry>
   <entry>
-    <title>Docker memo</title>
-    <url>/2018/05/30/Docker-memo/</url>
-    <content><![CDATA[<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker build -t cna-gateway .</span><br><span class="line">sudo docker push cna-gateway</span><br><span class="line">sudo docker stop fj-cna-gateway</span><br><span class="line">sudo docker rm  fj-cna-gateway</span><br><span class="line">sudo docker run -itd --name fj-cna-gateway -v /home/noah/k8s/conf/lib:/appl/ii/iid501/lib -v /home/noah/k8s/conf/an1/iid501:/appl/ii/iid501/properties -v /home/noah/k8s/conf/an1/iid401:/appl/ii/iid401/properties  -v /home/noah/k8s/conf/an1/iid601:/appl/ii/iid601/properties --restart=always --net=dev_nw --ip=10.20.0.64 --link=fj-cna-postgres:db  -p 30090:8080 192.168.180.23:5000/cna-gateway</span><br><span class="line">sudo docker exec -it fj-cna-gateway /bin/bash</span><br><span class="line">sudo docker cp /tmp/webapi.war fj-cna-gateway:/usr/local/tomcat/webapps/webapi.war</span><br></pre></td></tr></table></figure>
-<p>如果是centos肯定有yum<br>如果是ubuntu那即是apt-get<br>如果是alpine那即是apk</p>
+    <title>About Me</title>
+    <url>/2017/12/02/About-Me/</url>
+    <content><![CDATA[<p>QQ：441741764</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>K8s</title>
+    <url>/2019/09/19/K8s/</url>
+    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567/colmina/images/coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb /bin/bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f /app/deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f /appl/deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -51,18 +63,6 @@
 <p>CSS ID选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#my-id</span><br><span class="line">选择 &lt;p id=&quot;my-id&quot;&gt; 或 &lt;a id=&quot;my-id&quot;&gt;</span><br></pre></td></tr></table></figure></p>
 <p>CSS 属性选择器<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.my-class</span><br><span class="line">选择 &lt;p class=&quot;my-class&quot;&gt; 和 &lt;a class=&quot;my-class&quot;&gt;</span><br></pre></td></tr></table></figure></p>
 <p>JavaScript调试<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alert(&apos;hello!&apos;);</span><br><span class="line">console.log(&apos;abc&apos;);</span><br><span class="line">let myVariable = document.querySelector(&apos;h1&apos;);</span><br></pre></td></tr></table></figure></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>K8s</title>
-    <url>/2019/09/19/K8s/</url>
-    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567/colmina/images/coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb /bin/bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f /app/deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f /appl/deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
