@@ -3,7 +3,8 @@
   <entry>
     <title>About Me</title>
     <url>/2017/12/02/About-Me/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>QQ：441741764</p>
+]]></content>
   </entry>
   <entry>
     <title>Docker memo</title>
@@ -114,6 +115,18 @@
       </tags>
   </entry>
   <entry>
+    <title>k8s</title>
+    <url>/2019/09/19/k8s/</url>
+    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567/colmina/images/coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb /bin/bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f /app/deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f /appl/deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Postgres memo</title>
     <url>/2018/04/24/Postgres-memo/</url>
     <content><![CDATA[<h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">psql -p 5433 mmdb</span><br><span class="line">psql --host=col.azure.com -p 5432 -U uv2azure cii00</span><br></pre></td></tr></table></figure>
@@ -127,18 +140,6 @@
 <h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CREATE TABLE public.DP_USER_MODEL(</span><br><span class="line">    UserModel_ID varchar(256) NOT NULL,</span><br><span class="line">    userID varchar(256) NOT NULL,</span><br><span class="line">    UserModelCreationDate date,</span><br><span class="line">    UserModelCreationTime time,</span><br><span class="line">    UserModelSort varchar(256),</span><br><span class="line">    UserModelAnimalSpecies varchar(256),</span><br><span class="line">    UserModelOrgans varchar(256),</span><br><span class="line">    UserModelTissues varchar(256),</span><br><span class="line">    UserModelAccuracy int,</span><br><span class="line">    PRIMARY KEY(UserModel_ID, userID) );</span><br></pre></td></tr></table></figure>
 <h3 id="COPY"><a href="#COPY" class="headerlink" title="COPY"></a>COPY</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pg_dump database名 &gt; backup_file名</span><br><span class="line">psql database名 &lt; backup_file名</span><br><span class="line"></span><br><span class="line">COPY log_info TO   &apos;/tmp/log_info.csv&apos; WITH CSV DELIMITER &apos;,&apos;;</span><br><span class="line">COPY log_info FROM &apos;/tmp/log_info.csv&apos; WITH CSV DELIMITER &apos;,&apos;;</span><br></pre></td></tr></table></figure>
 <h3 id="服务启停"><a href="#服务启停" class="headerlink" title="服务启停"></a>服务启停</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl status postgresql.service</span><br><span class="line">systemctl stop postgresql.service</span><br><span class="line">systemctl start postgresql.service</span><br><span class="line"></span><br><span class="line">initdb -D /pgdb/cs1mlg10_db --xlogdir=/transaction/cs1mlg10_db --lc-collate=&quot;C&quot; --lc-ctype=&quot;C&quot; --encoding=UTF8</span><br><span class="line">pg_ctl reload -D /pgdb/cs1mlg10_db</span><br><span class="line">pg_ctl restart -D /pgdb/cs1mlg10_db</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>k8s</title>
-    <url>/2019/09/19/k8s/</url>
-    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567/colmina/images/coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb /bin/bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f /app/deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f /appl/deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
