@@ -212,7 +212,7 @@
     <link href="http://yoursite.com/2017/12/02/About-Me/"/>
     <id>http://yoursite.com/2017/12/02/About-Me/</id>
     <published>2017-12-02T07:13:12.000Z</published>
-    <updated>2020-06-26T07:22:42.638Z</updated>
+    <updated>2020-06-26T07:25:12.492Z</updated>
     
     <summary type="html">
     
@@ -228,6 +228,10 @@
     </summary>
     
     
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
