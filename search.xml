@@ -66,6 +66,13 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Docker memo</title>
+    <url>/2018/05/30/Docker-memo/</url>
+    <content><![CDATA[<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker build -t cna-gateway .</span><br><span class="line">sudo docker push cna-gateway</span><br><span class="line">sudo docker stop fj-cna-gateway</span><br><span class="line">sudo docker rm  fj-cna-gateway</span><br><span class="line">sudo docker run -itd --name fj-cna-gateway -v /home/noah/k8s/conf/lib:/appl/ii/iid501/lib -v /home/noah/k8s/conf/an1/iid501:/appl/ii/iid501/properties -v /home/noah/k8s/conf/an1/iid401:/appl/ii/iid401/properties  -v /home/noah/k8s/conf/an1/iid601:/appl/ii/iid601/properties --restart=always --net=dev_nw --ip=10.20.0.64 --link=fj-cna-postgres:db  -p 30090:8080 192.168.180.23:5000/cna-gateway</span><br><span class="line">sudo docker exec -it fj-cna-gateway /bin/bash</span><br><span class="line">sudo docker cp /tmp/webapi.war fj-cna-gateway:/usr/local/tomcat/webapps/webapi.war</span><br></pre></td></tr></table></figure>
+<p>如果是centos肯定有yum<br>如果是ubuntu那即是apt-get<br>如果是alpine那即是apk</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Html</title>
     <url>/2018/05/20/Html/</url>
     <content><![CDATA[<p>HTML原义字符    等价字符引用<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;	&amp;lt;</span><br><span class="line">&gt;	&amp;gt;</span><br><span class="line">&quot;	&amp;quot;</span><br><span class="line">&apos;	&amp;apos;</span><br><span class="line">&amp;	&amp;amp;</span><br><span class="line">空格	&amp;nbsp;</span><br><span class="line">换行	&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
@@ -77,11 +84,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Docker memo</title>
-    <url>/2018/05/30/Docker-memo/</url>
-    <content><![CDATA[<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker build -t cna-gateway .</span><br><span class="line">sudo docker push cna-gateway</span><br><span class="line">sudo docker stop fj-cna-gateway</span><br><span class="line">sudo docker rm  fj-cna-gateway</span><br><span class="line">sudo docker run -itd --name fj-cna-gateway -v /home/noah/k8s/conf/lib:/appl/ii/iid501/lib -v /home/noah/k8s/conf/an1/iid501:/appl/ii/iid501/properties -v /home/noah/k8s/conf/an1/iid401:/appl/ii/iid401/properties  -v /home/noah/k8s/conf/an1/iid601:/appl/ii/iid601/properties --restart=always --net=dev_nw --ip=10.20.0.64 --link=fj-cna-postgres:db  -p 30090:8080 192.168.180.23:5000/cna-gateway</span><br><span class="line">sudo docker exec -it fj-cna-gateway /bin/bash</span><br><span class="line">sudo docker cp /tmp/webapi.war fj-cna-gateway:/usr/local/tomcat/webapps/webapi.war</span><br></pre></td></tr></table></figure>
-<p>如果是centos肯定有yum<br>如果是ubuntu那即是apt-get<br>如果是alpine那即是apk</p>
-]]></content>
+    <title>k8s</title>
+    <url>/2019/09/19/k8s/</url>
+    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567/colmina/images/coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb /bin/bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f /app/deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f /appl/deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>Postgres memo</title>
@@ -109,10 +114,5 @@
 <h3 id="jar构成"><a href="#jar构成" class="headerlink" title="jar构成"></a>jar构成</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mvn dependency:tree</span><br></pre></td></tr></table></figure>
 <h3 id="MD5-Windows"><a href="#MD5-Windows" class="headerlink" title="MD5(Windows)"></a>MD5(Windows)</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">copy /b  beila.MP4+nb123.txt beila123.MP4</span><br><span class="line">certutil -hashfile beila123.MP4 MD5</span><br></pre></td></tr></table></figure>
 <h3 id="解压单个日志文件"><a href="#解压单个日志文件" class="headerlink" title="解压单个日志文件"></a>解压单个日志文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tar xvpf /log_archive/20191210.tar.gz 20191210/スマホWebAPサーバ#1/CCUSログ/operation.log-20191210</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>k8s</title>
-    <url>/2019/09/19/k8s/</url>
-    <content><![CDATA[<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567/colmina/images/coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb /bin/bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f /app/deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f /appl/deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
