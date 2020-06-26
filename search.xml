@@ -14,6 +14,23 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo Start</title>
+    <url>/2018/04/03/Hexo/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h3 id="追加"><a href="#追加" class="headerlink" title="追加"></a>追加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h3 id="config-yml-※Git指定"><a href="#config-yml-※Git指定" class="headerlink" title="_config.yml(※Git指定)"></a>_config.yml(※Git指定)</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:adiwangcc/adiwangcc.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h3 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C&quot;you_email&quot;</span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br><span class="line">cat /Users/xxx/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Marklogic memo</title>
     <url>/2018/04/08/Marklogic/</url>
     <content><![CDATA[<h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><ol>
@@ -66,23 +83,6 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for $uri in cts:uri-match(&quot;/doc/M_USER/*&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-delete($uri)</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo Start</title>
-    <url>/2018/04/03/Hexo/</url>
-    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="追加"><a href="#追加" class="headerlink" title="追加"></a>追加</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="config-yml-※Git指定"><a href="#config-yml-※Git指定" class="headerlink" title="_config.yml(※Git指定)"></a>_config.yml(※Git指定)</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:adiwangcc/adiwangcc.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<h3 id="生成新的SSH-Key"><a href="#生成新的SSH-Key" class="headerlink" title="生成新的SSH Key"></a>生成新的SSH Key</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C&quot;you_email&quot;</span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br><span class="line">cat /Users/xxx/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
