@@ -17,16 +17,25 @@
   
   <link rel="shortcut icon" href="/favicon.ico" />
   
-  <link rel="stylesheet" href="/dist/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
-  <link rel="stylesheet" href="/css/custom.css">
   
-  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
   
   
 
   
 
+<link rel="alternate" href="/atom.xml" title="AdiwangCC" type="application/atom+xml">
 </head>
 
 </html>
@@ -60,7 +69,7 @@
   <time datetime="2018-05-30T02:29:25.000Z" itemprop="datePublished">2018-05-30</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/技术/">技术</a>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
   </div>
   
 <div class="word_count">
@@ -68,7 +77,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">141</span>
+            <span class="post-count">194</span>
         </span>
     </span>
 
@@ -92,7 +101,7 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo docker build -t cna-gateway .</span><br><span class="line">sudo docker push cna-gateway</span><br><span class="line">sudo docker stop fj-cna-gateway</span><br><span class="line">sudo docker rm  fj-cna-gateway</span><br><span class="line">sudo docker run -itd --name fj-cna-gateway -v /home/noah/k8s/conf/lib:/appl/ii/iid501/lib -v /home/noah/k8s/conf/an1/iid501:/appl/ii/iid501/properties -v /home/noah/k8s/conf/an1/iid401:/appl/ii/iid401/properties  -v /home/noah/k8s/conf/an1/iid601:/appl/ii/iid601/properties --restart=always --net=dev_nw --ip=10.20.0.64 --link=fj-cna-postgres:db  -p 30090:8080 192.168.180.23:5000/cna-gateway</span><br><span class="line">sudo docker exec -it fj-cna-gateway /bin/bash</span><br><span class="line">sudo docker cp /tmp/webapi.war fj-cna-gateway:/usr/local/tomcat/webapps/webapi.war</span><br></pre></td></tr></table></figure>
+  <h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo docker build -t cna-gateway .</span><br><span class="line">sudo docker push cna-gateway</span><br><span class="line">sudo docker stop fj-cna-gateway</span><br><span class="line">sudo docker rm  fj-cna-gateway</span><br><span class="line">sudo docker run -itd --name fj-cna-gateway -v &#x2F;home&#x2F;noah&#x2F;k8s&#x2F;conf&#x2F;lib:&#x2F;appl&#x2F;ii&#x2F;iid501&#x2F;lib -v &#x2F;home&#x2F;noah&#x2F;k8s&#x2F;conf&#x2F;an1&#x2F;iid501:&#x2F;appl&#x2F;ii&#x2F;iid501&#x2F;properties -v &#x2F;home&#x2F;noah&#x2F;k8s&#x2F;conf&#x2F;an1&#x2F;iid401:&#x2F;appl&#x2F;ii&#x2F;iid401&#x2F;properties  -v &#x2F;home&#x2F;noah&#x2F;k8s&#x2F;conf&#x2F;an1&#x2F;iid601:&#x2F;appl&#x2F;ii&#x2F;iid601&#x2F;properties --restart&#x3D;always --net&#x3D;dev_nw --ip&#x3D;10.20.0.64 --link&#x3D;fj-cna-postgres:db  -p 30090:8080 192.168.180.23:5000&#x2F;cna-gateway</span><br><span class="line">sudo docker exec -it fj-cna-gateway &#x2F;bin&#x2F;bash</span><br><span class="line">sudo docker cp &#x2F;tmp&#x2F;webapi.war fj-cna-gateway:&#x2F;usr&#x2F;local&#x2F;tomcat&#x2F;webapps&#x2F;webapi.war</span><br></pre></td></tr></table></figure>
 <p>如果是centos肯定有yum<br>如果是ubuntu那即是apt-get<br>如果是alpine那即是apk</p>
  
       <!-- reward -->
@@ -161,7 +170,7 @@
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -373,8 +382,12 @@
     
   </div>
 </div>
-    <script src="/js/jquery-2.0.3.min.js"></script>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
 <script src="/js/lazyload.min.js"></script>
+
 <!-- Subtitle -->
 
 <script>
@@ -394,7 +407,9 @@
 
 <!-- Tocbot -->
 
+
 <script src="/js/tocbot.min.js"></script>
+
 <script>
   tocbot.init({
     tocSelector: '.tocbot',
@@ -412,7 +427,9 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
 <script src="/dist/main.js"></script>
+
 <!-- ImageViewer -->
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -528,7 +545,9 @@
 
 <!-- busuanzi  -->
 
+
 <script src="/js/busuanzi-2.3.pure.min.js"></script>
+
 
 <!-- ClickLove -->
 
@@ -538,7 +557,9 @@
 
 <!-- CodeCopy -->
 
+
 <link rel="stylesheet" href="/css/clipboard.css">
+
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
   function wait(callback, seconds) {
