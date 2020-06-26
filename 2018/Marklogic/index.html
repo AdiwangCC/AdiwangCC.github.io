@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Linux |  AdiwangCC
+    Marklogic memo |  AdiwangCC
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -38,8 +38,8 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="page-"
-  class="article article-type-page"
+  id="post-Marklogic"
+  class="article article-type-post"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
@@ -49,21 +49,99 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Linux
+  Marklogic memo
 </h1>
  
 
     </header>
-       
+     
+    <div class="article-meta">
+      <a href="/2018/Marklogic/" class="article-date">
+  <time datetime="2018-04-08T10:42:27.000Z" itemprop="datePublished">2018-04-08</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">476</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">2 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
     <div class="article-entry" itemprop="articleBody">
        
-  <h3 id="log轮替"><a href="#log轮替" class="headerlink" title="log轮替"></a>log轮替</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ls -lh</span><br><span class="line">sudo su -</span><br><span class="line">cd /etc/logrotate.d</span><br><span class="line">vi tomcat</span><br><span class="line">/opt/apache-tomcat-8.5.20/logs/*.out &#123;</span><br><span class="line">    daily</span><br><span class="line">    rotate 7</span><br><span class="line">    copytruncate</span><br><span class="line">    missingok</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">logrotate /etc/logrotate.conf</span><br><span class="line">logrotate -v -f /etc/logrotate.d/tomcat</span><br></pre></td></tr></table></figure>
-<h3 id="文件检索"><a href="#文件检索" class="headerlink" title="文件检索"></a>文件检索</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">find . -type f |xargs grep -i &quot;APPLY_MEANS&quot;</span><br><span class="line">find . -name &quot;APP.txt&quot;</span><br><span class="line">ls -ltr</span><br><span class="line">df -ah</span><br><span class="line">du -ah</span><br><span class="line">sudo yum install nodejs</span><br><span class="line">ps -ef | grep tomcat</span><br></pre></td></tr></table></figure>
-<h3 id="压缩，解压"><a href="#压缩，解压" class="headerlink" title="压缩，解压"></a>压缩，解压</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tar -zvcf ccuslog.tar ./</span><br><span class="line">tar -zvxf ccuslog.tar</span><br><span class="line"></span><br><span class="line">zip -r ccuslog.zip boduo</span><br><span class="line">unzip ccuslog.zip</span><br><span class="line"></span><br><span class="line">scp -p 172.16.24.5:/tmp/vpattern/5unix.sh /tmp/tartest/</span><br></pre></td></tr></table></figure>
-<h3 id="jar引用检索"><a href="#jar引用检索" class="headerlink" title="jar引用检索"></a>jar引用检索</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ProtectionDomain pd = StringUtils.class.getProtectionDomain();</span><br><span class="line">CodeSource cs = pd.getCodeSource();</span><br><span class="line">System.out.println(cs.getLocation());</span><br></pre></td></tr></table></figure>
-<h3 id="jar构成"><a href="#jar构成" class="headerlink" title="jar构成"></a>jar构成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn dependency:tree</span><br></pre></td></tr></table></figure>
-<h3 id="MD5-Windows"><a href="#MD5-Windows" class="headerlink" title="MD5(Windows)"></a>MD5(Windows)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">copy /b  beila.MP4+nb123.txt beila123.MP4</span><br><span class="line">certutil -hashfile beila123.MP4 MD5</span><br></pre></td></tr></table></figure>
-<h3 id="解压单个日志文件"><a href="#解压单个日志文件" class="headerlink" title="解压单个日志文件"></a>解压单个日志文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvpf /log_archive/20191210.tar.gz 20191210/スマホWebAPサーバ#1/CCUSログ/operation.log-20191210</span><br></pre></td></tr></table></figure>
+  <h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><ol>
+<li><p>范围检索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cts:uri-match(&quot;*M_INFO*.json&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>特定检索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fn:doc(&quot;/mst/M_DEPART.json&quot;)</span><br><span class="line">cts:search(fn:doc(),cts:and-query((</span><br><span class="line">                cts:collection-query(&quot;JIGYOUSYA_INFO&quot;)</span><br><span class="line">            )))</span><br><span class="line"></span><br><span class="line">xdmp:estimate(cts:search(fn:doc(),cts:and-query((</span><br><span class="line">                cts:collection-query(&quot;JIGYOUSYA_INFO&quot;)</span><br><span class="line">            )))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>模糊检索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:directory(&quot;/xxx/MAILNOTICE/&quot;,&quot;infinity&quot;)/ROOT[contains(DATETIME,&apos;2018-12-05&apos;) and contains(CODE,&apos;123456&apos;)]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文件名检索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $info in xdmp:directory(&quot;/cnt/INFO_APPLY/&quot;,&quot;infinity&quot;)/ROOT[DOCUMENT_UUID=&apos;/doc/INFO_APPLY/130329.json&apos;]/..</span><br><span class="line">return</span><br><span class="line">xdmp:node-uri($info)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>collection检索</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-get-collections(&quot;/ccus/ACCOUNT/1037837.json&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><ol>
+<li><p>替换例一</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for $userInfo in doc(cts:uri-match(&quot;/doc/M_USER_INFO/*.json&quot;))</span><br><span class="line">return</span><br><span class="line">if($userInfo/ROOT/USER_TYPE = &quot;3&quot; or $userInfo/ROOT/USER_TYPE = &quot;4&quot;)then</span><br><span class="line">xdmp:node-replace($userInfo/ROOT/ID,text&#123;&quot;0001&quot;&#125;)</span><br><span class="line">else();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>替换例二</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">for $userInfo in doc(cts:uri-match(&quot;/doc/M_USER_INFO/*.json&quot;))</span><br><span class="line">let $replaceId := $userInfo/ROOT/LOGIN_ID/data()</span><br><span class="line">return</span><br><span class="line">if($userInfo/ROOT/USER_TYPE = &quot;3&quot;)then</span><br><span class="line">(</span><br><span class="line">xdmp:node-replace($userInfo/ROOT/ID,text&#123;$replaceId&#125;)</span><br><span class="line">)</span><br><span class="line">else();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>追加(insert-after)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for $userInfo in doc(cts:uri-match(&quot;/doc/M_USER_INFO/*.json&quot;))</span><br><span class="line">return</span><br><span class="line">if(not(exists($userInfo/ROOT/USER_ID)))then(xdmp:node-insert-after($userInfo/ROOT/DATETIME, object-node&#123;&quot;USER_ID&quot;:&quot;&quot;&#125;/USER_ID))</span><br><span class="line">else();</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><ol>
+<li><p>数据插入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">declare variable $json_UserInfo :=&apos;&apos;;</span><br><span class="line">xdmp:document-insert(&quot;/doc/M_USER_INFO/1601671.json&quot;,xdmp:unquote($json_UserInfo));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>collection设定</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $uri in cts:uri-match(&quot;/doc/M_USER_INFO/1601671.json&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-add-collections($uri, &quot;M_USER_INFO&quot;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>权限设定</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-set-permissions(cts:uri-match(&quot;/doc/M_USER_INFO/*.json&quot;), (xdmp:permission(&quot;rest-reader&quot;, &quot;read&quot;), xdmp:permission(&quot;rest-writer&quot;, &quot;update&quot;)));</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>范围插入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">for $i in 1 to 500</span><br><span class="line">let $json_ScreenInfo :=concat(&apos;</span><br><span class="line">&#123;</span><br><span class="line">&quot;ROOT&quot;: &#123;</span><br><span class="line">&quot;APPLY_DATE&quot;: &quot;2018-11-27&quot;, </span><br><span class="line">&quot;SITE_ID&quot;: &quot;0402020181204&apos;,fn:format-number($i, &quot;000&quot;),&apos;&quot;, </span><br><span class="line">&quot;SITE_NAME&quot;: &quot;現場テスト&apos;,fn:format-number($i, &quot;000&quot;),&apos;&quot;, </span><br><span class="line">&quot;DOCUMENT_UUID&quot;: &quot;/ccus/doc/SITE_INFO/BML0402020181204&apos;,fn:format-number($i, &quot;000&quot;),&apos;.json&quot;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&apos;)</span><br><span class="line">let  $updateFlg := xdmp:document-insert(concat(&quot;0402020181204&quot;,fn:format-number($i, &quot;000&quot;),&quot;.json&quot;),xdmp:unquote($json_ScreenInfo))</span><br><span class="line">return</span><br><span class="line">   concat(&quot;0402020181204&quot;,fn:format-number($i, &quot;000&quot;),&quot;.json&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><ol>
+<li><p>特定删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdmp:document-delete(&quot;/M_USER/4557795307.json&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>范围删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for $uri in cts:uri-match(&quot;/doc/M_USER/*&quot;)</span><br><span class="line">return</span><br><span class="line">xdmp:document-delete($uri)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
  
       <!-- reward -->
       
@@ -126,17 +204,36 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/Linux.html" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2018/Marklogic/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/">undefined</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
 
     </footer>
   </div>
 
    
+  <nav class="article-nav">
+    
+      <a href="/2018/Postgres-memo/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Postgres memo
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2018/Hexo/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Hexo Start</div>
+      </a>
+    
+  </nav>
+
    
 <!-- valine评论 -->
 <div id="vcomments-box">
@@ -186,7 +283,7 @@
 </style>
 
  
-   
+     
 </article>
 
 </section>
@@ -348,6 +445,21 @@
 </script>
 
 <!-- Tocbot -->
+
+<script src="/js/tocbot.min.js"></script>
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">

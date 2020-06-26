@@ -18,8 +18,8 @@
   
   <entry>
     <title>K8s</title>
-    <link href="http://yoursite.com/2019/09/19/k8s/"/>
-    <id>http://yoursite.com/2019/09/19/k8s/</id>
+    <link href="http://yoursite.com/2019/k8s/"/>
+    <id>http://yoursite.com/2019/k8s/</id>
     <published>2019-09-19T08:34:07.000Z</published>
     <updated>2020-06-26T07:30:43.717Z</updated>
     
@@ -45,8 +45,8 @@
   
   <entry>
     <title>Linux</title>
-    <link href="http://yoursite.com/2019/06/14/linux/"/>
-    <id>http://yoursite.com/2019/06/14/linux/</id>
+    <link href="http://yoursite.com/2019/linux/"/>
+    <id>http://yoursite.com/2019/linux/</id>
     <published>2019-06-14T06:47:53.000Z</published>
     <updated>2020-06-26T07:30:23.507Z</updated>
     
@@ -72,8 +72,8 @@
   
   <entry>
     <title>Docker memo</title>
-    <link href="http://yoursite.com/2018/05/30/Docker-memo/"/>
-    <id>http://yoursite.com/2018/05/30/Docker-memo/</id>
+    <link href="http://yoursite.com/2018/Docker-memo/"/>
+    <id>http://yoursite.com/2018/Docker-memo/</id>
     <published>2018-05-30T02:29:25.000Z</published>
     <updated>2020-06-26T06:20:17.159Z</updated>
     
@@ -99,8 +99,8 @@
   
   <entry>
     <title>Html</title>
-    <link href="http://yoursite.com/2018/05/20/Html/"/>
-    <id>http://yoursite.com/2018/05/20/Html/</id>
+    <link href="http://yoursite.com/2018/Html/"/>
+    <id>http://yoursite.com/2018/Html/</id>
     <published>2018-05-20T06:33:53.000Z</published>
     <updated>2020-06-26T06:23:11.215Z</updated>
     
@@ -126,8 +126,8 @@
   
   <entry>
     <title>Postgres memo</title>
-    <link href="http://yoursite.com/2018/04/24/Postgres-memo/"/>
-    <id>http://yoursite.com/2018/04/24/Postgres-memo/</id>
+    <link href="http://yoursite.com/2018/Postgres-memo/"/>
+    <id>http://yoursite.com/2018/Postgres-memo/</id>
     <published>2018-04-24T01:31:46.000Z</published>
     <updated>2020-06-26T06:23:35.557Z</updated>
     
@@ -153,8 +153,8 @@
   
   <entry>
     <title>Marklogic memo</title>
-    <link href="http://yoursite.com/2018/04/08/Marklogic/"/>
-    <id>http://yoursite.com/2018/04/08/Marklogic/</id>
+    <link href="http://yoursite.com/2018/Marklogic/"/>
+    <id>http://yoursite.com/2018/Marklogic/</id>
     <published>2018-04-08T10:42:27.000Z</published>
     <updated>2020-06-26T06:23:29.630Z</updated>
     
@@ -182,8 +182,8 @@
   
   <entry>
     <title>Hexo Start</title>
-    <link href="http://yoursite.com/2018/04/03/Hexo/"/>
-    <id>http://yoursite.com/2018/04/03/Hexo/</id>
+    <link href="http://yoursite.com/2018/Hexo/"/>
+    <id>http://yoursite.com/2018/Hexo/</id>
     <published>2018-04-03T10:42:27.000Z</published>
     <updated>2020-06-26T06:22:56.005Z</updated>
     
@@ -209,8 +209,8 @@
   
   <entry>
     <title>About Me</title>
-    <link href="http://yoursite.com/2017/12/02/About-Me/"/>
-    <id>http://yoursite.com/2017/12/02/About-Me/</id>
+    <link href="http://yoursite.com/2017/About-Me/"/>
+    <id>http://yoursite.com/2017/About-Me/</id>
     <published>2017-12-02T07:13:12.000Z</published>
     <updated>2020-06-26T07:25:12.492Z</updated>
     
