@@ -77,59 +77,6 @@
     
     
     <article
-  id="post-K8s"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2019/09/19/K8s/"
-    >K8s</a> 
-</h2>
- 
-
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2019/09/19/K8s/" class="article-date">
-  <time datetime="2019-09-19T08:34:07.000Z" itemprop="datePublished">2019-09-19</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/技术/">技术</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo docker images</span><br><span class="line">docker login 172.27.0.11:4567 -u root -p password</span><br><span class="line">docker pull 172.27.0.11:4567/colmina/images/coredb</span><br><span class="line"></span><br><span class="line">kubectl get pods --all-namespaces</span><br><span class="line">kubectl describe pod iid-mbpbb -n tnt1000</span><br><span class="line">kubectl logs iid-mbpbb -n tnt1000</span><br><span class="line">kubectl exec -ti -n tnt1000 iid-mbpbb /bin/bash</span><br><span class="line"></span><br><span class="line">kubectl delete -f /app/deployment.yml  -n tnt1000</span><br><span class="line">kubectl create -f /appl/deployment.yml -n tnt1000</span><br></pre></td></tr></table></figure>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-</article>
-
-    
-    <article
   id="post-Linux"
   class="article article-type-post"
   itemscope
@@ -141,7 +88,7 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2019/06/14/Linux/"
+  <a class="article-title" href="/2020/06/26/Linux/"
     >Linux</a> 
 </h2>
  
@@ -149,25 +96,14 @@
     </header>
      
     <div class="article-meta">
-      <a href="/2019/06/14/Linux/" class="article-date">
-  <time datetime="2019-06-14T06:47:53.000Z" itemprop="datePublished">2019-06-14</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/技术/">技术</a>
-  </div>
-   
+      <a href="/2020/06/26/Linux/" class="article-date">
+  <time datetime="2020-06-26T07:46:19.000Z" itemprop="datePublished">2020-06-26</time>
+</a>    
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h3 id="log轮替"><a href="#log轮替" class="headerlink" title="log轮替"></a>log轮替</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">ls -lh</span><br><span class="line">sudo su -</span><br><span class="line">cd /etc/logrotate.d</span><br><span class="line">vi tomcat</span><br><span class="line">/opt/apache-tomcat-8.5.20/logs/*.out &#123;</span><br><span class="line">    daily</span><br><span class="line">    rotate 7</span><br><span class="line">    copytruncate</span><br><span class="line">    missingok</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">logrotate /etc/logrotate.conf</span><br><span class="line">logrotate -v -f /etc/logrotate.d/tomcat</span><br></pre></td></tr></table></figure>
-<h3 id="文件检索"><a href="#文件检索" class="headerlink" title="文件检索"></a>文件检索</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">find . -type f |xargs grep -i &quot;APPLY_MEANS&quot;</span><br><span class="line">find . -name &quot;APP.txt&quot;</span><br><span class="line">ls -ltr</span><br><span class="line">df -ah</span><br><span class="line">du -ah</span><br><span class="line">sudo yum install nodejs</span><br><span class="line">ps -ef | grep tomcat</span><br></pre></td></tr></table></figure>
-<h3 id="压缩，解压"><a href="#压缩，解压" class="headerlink" title="压缩，解压"></a>压缩，解压</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tar -zvcf ccuslog.tar ./</span><br><span class="line">tar -zvxf ccuslog.tar</span><br><span class="line"></span><br><span class="line">zip -r ccuslog.zip boduo</span><br><span class="line">unzip ccuslog.zip</span><br><span class="line"></span><br><span class="line">scp -p 172.16.24.5:/tmp/vpattern/5unix.sh /tmp/tartest/</span><br></pre></td></tr></table></figure>
-<h3 id="jar引用检索"><a href="#jar引用检索" class="headerlink" title="jar引用检索"></a>jar引用检索</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ProtectionDomain pd = StringUtils.class.getProtectionDomain();</span><br><span class="line">CodeSource cs = pd.getCodeSource();</span><br><span class="line">System.out.println(cs.getLocation());</span><br></pre></td></tr></table></figure>
-<h3 id="jar构成"><a href="#jar构成" class="headerlink" title="jar构成"></a>jar构成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn dependency:tree</span><br></pre></td></tr></table></figure>
-<h3 id="MD5-Windows"><a href="#MD5-Windows" class="headerlink" title="MD5(Windows)"></a>MD5(Windows)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">copy /b  beila.MP4+nb123.txt beila123.MP4</span><br><span class="line">certutil -hashfile beila123.MP4 MD5</span><br></pre></td></tr></table></figure>
-<h3 id="解压单个日志文件"><a href="#解压单个日志文件" class="headerlink" title="解压单个日志文件"></a>解压单个日志文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvpf /log_archive/20191210.tar.gz 20191210/スマホWebAPサーバ#1/CCUSログ/operation.log-20191210</span><br></pre></td></tr></table></figure>
- 
+   
       <!-- reward -->
       
     </div>
@@ -177,8 +113,52 @@
     
     <footer class="article-footer">
        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+    </footer>
+  </div>
 
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-K8s"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/06/26/K8s/"
+    >K8s</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2020/06/26/K8s/" class="article-date">
+  <time datetime="2020-06-26T07:46:16.000Z" itemprop="datePublished">2020-06-26</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+   
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
     </footer>
   </div>
 
