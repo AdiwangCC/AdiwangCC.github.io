@@ -142,8 +142,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Postgres memo</title>
-    <url>/2020/test/</url>
+    <title>test</title>
+    <url>/2020/20200424/test/</url>
     <content><![CDATA[<h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">psql -p 5433 mmdb</span><br><span class="line">psql --host&#x3D;col.azure.com -p 5432 -U uv2azure cii00</span><br></pre></td></tr></table></figure>
 <h3 id="设定搜索路径"><a href="#设定搜索路径" class="headerlink" title="设定搜索路径"></a>设定搜索路径</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">show search_path;</span><br><span class="line">set search_path &#x3D; &#39;scv2azure000&#39;;</span><br><span class="line">set search_path to myschema,public;</span><br></pre></td></tr></table></figure>
 <h3 id="查询表结构"><a href="#查询表结构" class="headerlink" title="查询表结构"></a>查询表结构</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\l                         &#x2F;&#x2F; 显示所有数据库</span><br><span class="line">\dt                        &#x2F;&#x2F; 显示当前数据库中的所有表</span><br><span class="line">\d [table_name]            &#x2F;&#x2F; 显示当前数据库的指定表的表结构</span><br><span class="line">\c [database_name]         &#x2F;&#x2F; 切换到指定数据库,相当于use</span><br><span class="line">\c - [user_name]           &#x2F;&#x2F; 切换用户</span><br><span class="line">\du                        &#x2F;&#x2F; 显示所有用户</span><br><span class="line">\conninfo                  &#x2F;&#x2F; 显示当前数据库和连接信息</span><br><span class="line">\encoding [字元编码名称]    &#x2F;&#x2F; 显示或设定用户端字元编码</span><br><span class="line">\df                        &#x2F;&#x2F; 查看所有存储过程（函数）</span><br></pre></td></tr></table></figure>
