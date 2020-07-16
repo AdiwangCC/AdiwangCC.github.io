@@ -141,4 +141,16 @@
         <tag>随笔</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Windows</title>
+    <url>/2020/windows/</url>
+    <content><![CDATA[<h3 id="文件检索"><a href="#文件检索" class="headerlink" title="文件检索"></a>文件检索</h3><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">tree</span> /f &gt;xxx.txt</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
 </search>
