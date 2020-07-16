@@ -144,7 +144,7 @@
   <entry>
     <title>Windows</title>
     <url>/2020/windows/</url>
-    <content><![CDATA[<h3 id="文件检索"><a href="#文件检索" class="headerlink" title="文件检索"></a>文件检索</h3><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">tree</span> /f &gt;xxx.txt</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h3 id="文件一览"><a href="#文件一览" class="headerlink" title="文件一览"></a>文件一览</h3><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">tree</span> /f &gt;xxx.txt</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术</category>
